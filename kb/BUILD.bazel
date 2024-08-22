@@ -1,0 +1,9 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "go_default_library",
+    srcs = ["kb.go"],
+    importpath = "github.com/findyourpaths/chromedp/kb",
+    visibility = ["//visibility:public"],
+    deps = ["@com_github_chromedp_cdproto//input:go_default_library"],
+)
