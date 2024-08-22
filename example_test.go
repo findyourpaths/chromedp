@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chromedp/chromedp"
-	"github.com/chromedp/chromedp/device"
+	"github.com/findyourpaths/chromedp"
+	"github.com/findyourpaths/chromedp/device"
 
 	"github.com/chromedp/cdproto/cdp"
 	"github.com/chromedp/cdproto/dom"
@@ -415,7 +415,7 @@ func ExamplePrintToPDF() {
 
 	var buf []byte
 	if err := chromedp.Run(ctx,
-		chromedp.Navigate(`https://pkg.go.dev/github.com/chromedp/chromedp`),
+		chromedp.Navigate(`https://pkg.go.dev/github.com/findyourpaths/chromedp`),
 		chromedp.ActionFunc(func(ctx context.Context) error {
 			var err error
 			buf, _, err = page.PrintToPDF().

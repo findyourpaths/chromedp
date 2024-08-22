@@ -1417,7 +1417,7 @@ func TestRunResponse_noResponse(t *testing.T) {
 
 // TestWebGL tests that WebGL is correctly configured in headless-shell.
 //
-// This is a regress test for https://github.com/chromedp/chromedp/issues/1073.
+// This is a regress test for https://github.com/findyourpaths/chromedp/issues/1073.
 func TestWebGL(t *testing.T) {
 	t.Parallel()
 
@@ -1464,7 +1464,7 @@ func TestWebGL(t *testing.T) {
 //   - pageNumber
 //   - totalPages
 //
-// This is a regress test for https://github.com/chromedp/chromedp/issues/922.
+// This is a regress test for https://github.com/findyourpaths/chromedp/issues/922.
 func TestPDFTemplate(t *testing.T) {
 	t.Parallel()
 

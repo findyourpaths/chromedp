@@ -396,7 +396,7 @@ func (c *Context) newTarget(ctx context.Context) error {
 		// 1. with the "--app" option (should disable headless mode);
 		// 2. URL other than "about:blank" is placed in the command line arguments.
 		// So we should not require that the URL to be "about:blank".
-		// See issue https://github.com/chromedp/chromedp/issues/1076
+		// See issue https://github.com/findyourpaths/chromedp/issues/1076
 		// In any cases that the browser starts with multiple tabs open,
 		// it should be okay to attach to any one of them (no matter whether it
 		// is blank).

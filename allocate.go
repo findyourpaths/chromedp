@@ -52,7 +52,7 @@ func setupExecAllocator(opts ...ExecAllocatorOption) *ExecAllocator {
 // if the given parent context doesn't have an allocator set up. Do not modify
 // this global; instead, use NewExecAllocator. See [ExampleExecAllocator].
 //
-// [ExampleExecAllocator]: https://pkg.go.dev/github.com/chromedp/chromedp#example-ExecAllocator
+// [ExampleExecAllocator]: https://pkg.go.dev/github.com/findyourpaths/chromedp#example-ExecAllocator
 var DefaultExecAllocatorOptions = [...]ExecAllocatorOption{
 	NoFirstRun,
 	NoDefaultBrowserCheck,
@@ -489,7 +489,7 @@ func Headless(a *ExecAllocator) {
 //   - https://github.com/puppeteer/puppeteer/pull/4523
 //
 // But according to this reported issue, it's still required in some cases:
-//   - https://github.com/chromedp/chromedp/issues/904
+//   - https://github.com/findyourpaths/chromedp/issues/904
 func DisableGPU(a *ExecAllocator) {
 	Flag("disable-gpu", true)(a)
 }
